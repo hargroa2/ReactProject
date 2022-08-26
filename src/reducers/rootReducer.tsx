@@ -3,47 +3,45 @@ type Action = {
   payload?: any;
 };
 
-type ProductDetail = {
-  description: string;
+type FoodDetail = {
   price: string;
+  name: string;
 };
 
 type State = {
-  products: ProductDetail[];
-  user: string;
-  items: ProductDetail[];
+  menu: FoodDetail[];
+  items: FoodDetail[];
 };
 
-const initialProducts = [
+const initialMenu = [
   {
-    description: "Dragon Pool Floatie",
-    price: "$2",
+    name: "Sheperd's Pie",
+    price: "$17",
   },
   {
-    description: "Shiny gold keychain",
-    price: "$3",
+    name: "Irish Coddle",
+    price: "$15",
   },
   {
-    description: "Ping pong ball pack",
-    price: "$4",
+    name: "Bangers & Mash",
+    price: "$18",
   },
   {
-    description: "Walking harness",
-    price: "$5",
+    name: "Irish Food1",
+    price: "$17",
   },
   {
-    description: "Jingle ball",
-    price: "$3",
+    name: "Irish Food2",
+    price: "$17",
   },
   {
-    description: "Driftwood",
-    price: "$10",
+    name: "Irish Food3",
+    price: "$17",
   },
 ];
 
 const initialState: State = {
-  products: initialProducts,
-  user: "Amanda",
+  menu: initialMenu,
   items: [],
 };
 
