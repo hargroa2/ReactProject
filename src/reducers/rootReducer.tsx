@@ -8,11 +8,6 @@ type FoodDetail = {
   name: string;
 };
 
-type State = {
-  menu: FoodDetail[];
-  items: FoodDetail[];
-};
-
 const initialMenu = [
   {
     name: "Sheperd's Pie",
@@ -40,6 +35,11 @@ const initialMenu = [
   },
 ];
 
+type State = {
+  menu: FoodDetail[];
+  items: FoodDetail[];
+};
+
 const initialState: State = {
   menu: initialMenu,
   items: [],
@@ -52,7 +52,10 @@ const rootReducer = (state = initialState, action: Action) => {
       console.log(newItems);
       return { ...state, items: [...newItems, action?.payload] };
     case "REMOVE_FROM_CART":
-      return { ...state };
+      return {
+        ...state,
+        items: [...state.items].filter((item) => item !== action.payload),
+      };
     default:
       return state;
   }
