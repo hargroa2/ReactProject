@@ -1,24 +1,21 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
+
+//====== API SETUP ======
+// findMovie = async (e) => {
+//   const response = await fetch(
+//     `http://www.omdbapi.com/?s=${searchTerm}&apikey=31738fd0`
+//   );
+//   const json = await response.json();
+//   setMovies(json.Search);
+//   console.log(json);
+// };
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Restaurant</h1>
+      <p>This is the restaurant description</p>
     </div>
   );
 }
