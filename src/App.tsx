@@ -1,5 +1,5 @@
 import "./App.scss";
-import { useSelector, useDispatch } from "react-redux";
+// import { useSelector, useDispatch } from "react-redux";
 
 //====== API SETUP: SPOONACULAR ======
 // const dispatch = useDispatch();
