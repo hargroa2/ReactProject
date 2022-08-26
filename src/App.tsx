@@ -13,6 +13,21 @@ const getMenu = async () => {
   // const json = await menuJson.json();
   // dispatch({ type: "SET_MENU", payload: json });
   // console.log(json);
+  // ====== COCKTAILS API ======
+  //   const options = {
+  //     method: "GET",
+  //     headers: {
+  //       "X-RapidAPI-Key": "8bdd6ac647mshec06c3605007861p14466bjsn68a802965e6a",
+  //       "X-RapidAPI-Host": "the-cocktail-db.p.rapidapi.com",
+  //     },
+  //   };
+  //   fetch(
+  //     "https://the-cocktail-db.p.rapidapi.com/filter.php?c=Ordinary_Drink",
+  //     options
+  //   )
+  //     .then((response) => response.json())
+  //     .then((response) => console.log(response))
+  //     .catch((err) => console.error(err));
 };
 getMenu();
 
