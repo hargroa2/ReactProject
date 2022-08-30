@@ -1,16 +1,17 @@
 import React from "react";
 import { useAppSelector, useAppDispatch } from "../app/hooks";
+import "../styles/Order.scss";
 
 const MenuItems = (props: any): JSX.Element => {
   const dispatch = useAppDispatch();
   console.log(props);
   const menu = useAppSelector((state) => state.menu);
   return (
-    <div>
-      <h2>Menu Items</h2>
+    <div className="item-flex">
+      {/* <h2>Menu Items</h2> */}
       {menu.map((item) => {
         return (
-          <div>
+          <div className="">
             <p>{item.name}</p>
             <p>{item.price}</p>
             <button

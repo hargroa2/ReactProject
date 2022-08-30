@@ -1,0 +1,36 @@
+@use "../variables/Variables" as *;
+
+* {
+  font-family: $merriweather;
+}
+
+.menu-flex {
+  display: flex;
+}
+
+.menu-container {
+  border: 1px solid black;
+  min-width: 80vw;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.item-flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-content: space-around;
+  align-items: space-around;
+
+  div {
+    height: 200px;
+  }
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  min-width: 20vw;
+}
