@@ -28,6 +28,9 @@ import chilifries from "../assets/chilifries.jpg";
 import garlicfries from "../assets/garlicfries.jpg";
 import sodabread from "../assets/sodabread.jpg";
 import cheesecake from "../assets/cheesecake.jpg";
+import applecrumble from "../assets/applecrumble.jpeg";
+import brownie from "../assets/brownie.jpg";
+import redvelvetcake from "../assets/redvelvetcake.jpg";
 import "../App.tsx";
 
 type Action = {
@@ -310,19 +313,19 @@ const initialMenu = [
         price: "$9",
       },
       {
-        img: "drink2.jpg",
+        img: applecrumble,
         name: "Homemade Apple Crumble",
         desc: "Caramelized apple butter filling and ground cinnamon",
         price: "$8",
       },
       {
-        img: "drink2.jpg",
+        img: brownie,
         name: "Guinness Chocolate Brownie",
         desc: "Large chocolate sponge baked with Guinness stout",
         price: "$9",
       },
       {
-        img: "drink2.jpg",
+        img: redvelvetcake,
         name: "Red Velvet Cake",
         desc: "Red velvet sponge with cream cheese buttercream",
         price: "$7",

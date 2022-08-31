@@ -1,4 +1,6 @@
 import "../src/styles/App.scss";
+import ReactPlayer from "react-player";
+// import bartender from "./assets/bartender.mp4";
 // import { useSelector, useDispatch } from "react-redux";
 
 //====== API SETUP: SPOONACULAR ======
@@ -36,8 +38,14 @@ getMenu();
 function App() {
   return (
     <div className="App">
-      <h1>Restaurant</h1>
-      <p>This is the restaurant description</p>
+      <ReactPlayer url="bartender.mp4" loop muted playing className="video" />
+      {/* <div className="text">
+        <h1>Your Home Away From Home</h1>
+        <p>Lorem ipsum all of that jazz</p>
+        <a href="#" className="order-button">
+          Order Now
+        </a>
+      </div> */}
     </div>
   );
 }
