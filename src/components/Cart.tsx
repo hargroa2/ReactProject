@@ -8,14 +8,29 @@ const Cart = (): JSX.Element => {
   return (
     <div className="">
       <h1>Cart</h1>
-      {cart.map((item) => {
+      {cart.map((item, index) => {
         return (
-          <div>
-            <p>{item.name}</p>
-            <p>{item.price}</p>
+          <div key={index}>
+            {/* {item.list.map((c, i) => {
+              return (
+                <div key={i}>
+                  <p>{c.name}</p>
+                  <p>{c.price}</p>
+                  <button
+                    key={c.name}
+                    onClick={() =>
+                      dispatch({ type: "REMOVE_FROM_CART", payload: item })
+                    }
+                  >
+                    Remove From Cart
+                  </button>
+                </div>
+              );
+            })} */}
+            <p>{item.list[0].name}</p>
+            <p>{item.list[0].price}</p>
             <button
-              className="productButton"
-              key={item.name}
+              key={item.list[0].name}
               onClick={() =>
                 dispatch({ type: "REMOVE_FROM_CART", payload: item })
               }
