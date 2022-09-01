@@ -3,7 +3,8 @@
 
 .navbar {
   width: 100%;
-  background-color: $navGray;
+  // Change back to $navGray when trying to bugfix
+  background-color: $black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,6 +36,7 @@
 
   h1 {
     color: $white;
+    text-decoration: none;
   }
 
   .logo-container {
@@ -82,12 +84,12 @@
   .close svg {
     display: none;
     cursor: pointer;
-    transform: rotate(360deg);
     transition: all 0.2s ease-in-out;
     fill: $white;
 
     &:hover {
       fill: $green;
+      transform: rotate(360deg);
     }
   }
 

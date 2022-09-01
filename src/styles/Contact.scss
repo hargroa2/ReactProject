@@ -1,0 +1,26 @@
+@use "../variables/Variables" as *;
+
+.info {
+  text-align: center;
+  text-decoration: none;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.information-fit {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: space-around;
+
+  h1,
+  p {
+    text-align: center;
+  }
+}

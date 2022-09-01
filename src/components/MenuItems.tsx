@@ -4,7 +4,6 @@ import "../App.tsx";
 
 const MenuItems = (props: any): JSX.Element => {
   const dispatch = useAppDispatch();
-  // console.log(props);
   const menu = useAppSelector((state) => state.menu);
   return (
     <div>
@@ -35,34 +34,61 @@ const MenuItems = (props: any): JSX.Element => {
       </div>
       <div className="item-flex">
         {menu.map((item, index) => {
-          // console.log(menu);
           return (
             <div key={index} className="">
-              <h1 id={item.section}>{item.section}</h1>
-              <div className="item-grid">
-                {item.list.map((c, i) => {
-                  return (
-                    <div key={i} className="item-section">
-                      <img src={c.img} alt="food image" />
-                      <p>{c.name}</p>
-                      <p>{c.desc}</p>
-                      <p>{c.price}</p>
-                      <button
-                        key={c.name}
-                        onClick={() =>
-                          dispatch({
-                            type: "ADD_TO_CART",
-                            payload: item,
-                          })
-                        }
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
-                  );
-                })}
+              {/* <h2 id={item.section} className="spacing2">
+                {item.section}
+              </h2> */}
+              <div className="link-space">
+                <a id={item.section}></a>
+                <img src={item.img} alt="food image" className="spacing" />
+              </div>
+              <p>{item.name}</p>
+              <p>{item.desc}</p>
+              <p>{item.price}</p>
+              <div className="">
+                <button
+                  key={item.name}
+                  onClick={() =>
+                    dispatch({
+                      type: "ADD_TO_CART",
+                      payload: item,
+                    })
+                  }
+                  className=""
+                >
+                  Add To Cart
+                </button>
+                <a href="#top">Back to Top</a>
               </div>
             </div>
+
+            // <div key={index} className="">
+            //   <h1 id={item.section}>{item.section}</h1>
+            //   <div className="item-grid">
+            //     {item.list.map((c, i) => {
+            //       return (
+            //         <div key={i} className="item-section">
+            //           <img src={c.img} alt="food image" />
+            //           <p>{c.name}</p>
+            //           <p>{c.desc}</p>
+            //           <p>{c.price}</p>
+            //           <button
+            //             key={c.name}
+            //             onClick={() =>
+            //               dispatch({
+            //                 type: "ADD_TO_CART",
+            //                 payload: item,
+            //               })
+            //             }
+            //           >
+            //             Add To Cart
+            //           </button>
+            //         </div>
+            //       );
+            //     })}
+            //   </div>
+            // </div>
           );
         })}
       </div>

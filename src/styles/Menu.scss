@@ -1,1 +1,48 @@
+@use "../variables/Variables" as *;
+body {
+  background-color: $linen;
+}
 
+.header {
+  text-align: center;
+  text-decoration: none;
+  font-size: 50px;
+  width: 100vw;
+  background-color: $green;
+  margin-top: 0;
+  padding: 40px 0;
+  color: $white;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+}
+
+.starter-flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 100px;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+hr {
+  width: 90vw;
+}
+
+.food-separation {
+  margin: 20px;
+  // width: 100vw;
+}
+
+.horz {
+  width: 650px;
+}
+
+.section-header {
+  margin: 20px;
+}

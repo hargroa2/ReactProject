@@ -12,7 +12,7 @@ const Navbar = (): JSX.Element => {
   };
 
   return (
-    <div className="navbar">
+    <div className="navbar" id="top">
       <div className="logo-container">
         <h1>The Hardy Grove</h1>
       </div>

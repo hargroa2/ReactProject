@@ -40,8 +40,11 @@
 }
 
 .item-flex {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 20px;
+  margin-right: 20px;
+  // flex-direction: column;
 
   img {
     width: 15rem;
@@ -68,4 +71,75 @@
   justify-content: center;
   border: 1px solid black;
   min-width: 20vw;
+  text-align: center;
+
+  h1 {
+    text-decoration: none;
+  }
 }
+
+// ORDER COMPLETE PAGE
+.complete-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    text-decoration: none;
+    font-size: 80px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.social-flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacing {
+  margin-top: 40px;
+}
+
+.spacing2 {
+  margin: 0;
+}
+
+.link-space {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-button {
+  margin-right: 180px;
+}
+
+// .card-spacing {
+//   display: flex;
+//   flex-direction: column;
+//   // justify-content: center;
+// }

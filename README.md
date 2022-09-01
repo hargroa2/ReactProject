@@ -15,3 +15,5 @@ Beef Stew - jeffreyw, CC BY 2.0 https://creativecommons.org/licenses/by/2.0, via
 Dublin Coddle - Chef, CC BY 4.0 https://creativecommons.org/licenses/by/4.0/ via Cookipedia
 
 Apple Crumble - James Petts from London, England, CC BY-SA 2.0 https://creativecommons.org/licenses/by-sa/2.0, via Wikimedia Commons
+
+Knot - Knot by Federico Panzano from Noun Project https://thenounproject.com/browse/icons/term/knot/

@@ -9,6 +9,8 @@ import Navbar from "./components/Navbar";
 import Menu from "./components/Menu";
 import Order from "./components/Order";
 import Contact from "./components/Contact";
+import Error from "./components/Error";
+import OrderComplete from "./components/OrderComplete";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -23,6 +25,8 @@ root.render(
           <Route path="/menu" element={<Menu />} />
           <Route path="/order" element={<Order />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+          <Route path="/ordercomplete" element={<OrderComplete />} />
         </Routes>
       </BrowserRouter>
     </Provider>
