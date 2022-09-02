@@ -2,7 +2,7 @@
 
 Welcome to The Hardy Grove, an Irish pub that lies deep within the beautiful Connemara region. The purpose of this project was to showcase React and utilize it to advertize a commercial business.
 
-You can find out more about the project on my Dev article [here](https://dev.to/dashboard).
+You can find out more about the project on my Dev article [here](https://dev.to/hargroa2/i-just-built-my-first-official-reactredux-website-2711).
 
 ## Installation
 
