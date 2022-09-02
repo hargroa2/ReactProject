@@ -1,6 +1,6 @@
 @use "../variables/Variables" as *;
 body {
-  background-color: $linen;
+  background-color: $mango;
 }
 
 .header {
@@ -9,15 +9,33 @@ body {
   font-size: 50px;
   width: 100vw;
   background-color: $green;
-  margin-top: 0;
+  margin-top: 134px;
   padding: 40px 0;
   color: $white;
 }
 
+.heading-contact-menu {
+  width: 100vw;
+  margin-top: 155px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.heading-title {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-contact-text-menu {
+  position: absolute;
+  top: 40%;
+  color: $white;
+  font-size: 100px;
+  font-family: $playfair;
+}
 .menu-container {
   display: flex;
   justify-content: center;
-  //   align-items: center;
 }
 
 .starter-flex {
@@ -26,8 +44,15 @@ body {
   margin-bottom: 100px;
 }
 
-h1 {
-  text-decoration: underline;
+.font-change {
+  padding: 20px;
+
+  h2 {
+    font-family: $playfair;
+  }
+  p {
+    font-family: $madurai;
+  }
 }
 
 hr {
@@ -35,14 +60,47 @@ hr {
 }
 
 .food-separation {
-  margin: 20px;
-  // width: 100vw;
+  margin: 0;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.food-container {
+  margin: 40px;
 }
 
 .horz {
-  width: 650px;
+  width: 40%;
 }
 
 .section-header {
-  margin: 20px;
+  margin: 0;
+  font-family: $playfair;
+  display: flex;
+  justify-content: center;
+  background-color: $black;
+  color: $white;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .heading-contact-menu {
+    margin: 0;
+  }
+
+  .heading-contact-text-menu {
+    top: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .starter-flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section-header {
+    text-align: center;
+  }
 }

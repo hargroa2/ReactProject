@@ -1,26 +1,169 @@
 @use "../variables/Variables" as *;
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $white;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.heading-title {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-contact {
+  width: 100vw;
+  margin-top: 155px;
+  object-fit: cover;
+  height: 500px;
+}
+
+.heading-contact-text {
+  position: absolute;
+  top: 40%;
+  color: $white;
+  font-size: 100px;
+  font-family: $playfair;
+}
+
 .info {
   text-align: center;
   text-decoration: none;
   font-size: 40px;
-  margin-bottom: 50px;
+  background-color: $black;
+  color: $white;
+  margin: 0;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cards {
+  border: 1px solid $black;
+  border-radius: 10px;
+
+  p {
+    margin: 20px;
+  }
+}
+
+#signup {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .information-fit {
   display: flex;
   justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
   text-align: center;
 }
 
 .info-flex {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 20px;
 
   h1,
   p {
     text-align: center;
+  }
+}
+
+iframe {
+  margin-top: 150px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 80px 100px 80px;
+  background-color: $white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.input-container {
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="email"] {
+  padding: 15px;
+  width: 20rem;
+  margin: 0;
+  margin-bottom: 30px;
+  border-right: none;
+  border: 1px solid $black;
+}
+
+input[type="button"] {
+  padding: 15px;
+  margin: 0;
+  margin-bottom: 30px;
+  border-left: none;
+  border: 1px solid $black;
+  background-color: $black;
+  color: $white;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: #333030;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .information-fit {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: 66px;
+  }
+
+  .heading-contact {
+    margin-top: 65px;
+  }
+
+  .heading-contact-text {
+    top: 30%;
+  }
+
+  .input-container {
+    width: 0;
+  }
+
+  .signup-container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  input[type="email"] {
+    width: 15rem;
+  }
+
+  @media screen and (max-width: 650px) {
+    .info-flex {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .heading-contact-text {
+    font-size: 70px;
   }
 }

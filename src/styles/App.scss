@@ -31,9 +31,8 @@ video {
 
   .order-button {
     text-decoration: none;
-    color: white;
+    color: $white;
     background-color: 4px solid $green;
-    // z-index: 1000;
   }
 }
 
@@ -43,11 +42,23 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin-top: 40px;
+  margin-top: 300px;
+}
 
-  img {
-    width: 200px;
-  }
+#error-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: $white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 200px;
+}
+
+img {
+  width: 200px;
 }
 
 #error-head {
@@ -58,4 +69,52 @@ video {
 
 #error-text {
   font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .error-flex {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #error-time {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+// footer
+.foot-container {
+  width: 100vw;
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 2px solid $white;
+}
+
+#foot-logo {
+  width: 100px;
+  margin: 20px 0;
+}
+
+.foot-social ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.foot-social ul li a {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.flex-them {
+  display: flex;
+}
+
+.social-flexbox p {
+  margin-bottom: 0;
 }

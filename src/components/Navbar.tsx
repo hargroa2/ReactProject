@@ -4,6 +4,7 @@ import { FaTwitter, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
+import logo from "../assets/hardygrove.png";
 
 const Navbar = (): JSX.Element => {
   const [active, setActive] = useState(false);
@@ -12,15 +13,14 @@ const Navbar = (): JSX.Element => {
   };
 
   return (
-    <div className="navbar" id="top">
+    <div className="navbar">
       <div className="logo-container">
-        <h1>The Hardy Grove</h1>
+        <img src={logo} alt="The Hardy Grove" id="logo" />
       </div>
       <div className="closed">
         <GiHamburgerMenu
           className={active ? "menu-icon active" : "menu-icon"}
           onClick={showMenu}
-          style={{ color: "white" }}
         />
       </div>
       <div className={active ? "nav-container active" : "nav-container"}>

@@ -1,6 +1,26 @@
 # Restaurant App
 
-# Image Accredations
+Welcome to The Hardy Grove, an Irish pub that lies deep within the beautiful Connemara region. The purpose of this project was to showcase React and utilize it to advertize a commercial business.
+
+You can find out more about the project on my Dev article [here](https://dev.to/dashboard).
+
+## Installation
+
+Make sure that you clone this repository and run npm install on everything that it within the dependencies in package.json. This project utilized many things, including SASS and TypeScript.
+
+## Color Pallete
+
+Raisin Black: #221f1f;
+White: #fff;
+Black: rgba(0, 0, 0, 0.7);
+Slimy Green: #3f9301;
+Mango Tango: #fc814a;
+
+## Fonts
+
+Hind Madurai and Playfair Display were used in the making of this application.
+
+## Image Accredations
 
 Shepherd's Pie - Jen Arrr, CC BY 2.0 https://creativecommons.org/licenses/by/2.0/, via Wikimedia Commons
 
